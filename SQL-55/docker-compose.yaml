@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  postgres:
+    container_name: "testdb"
+    image: postgres:15.2-alpine
+    environment:
+      POSTGRES_PASSWORD: "postgrespw"
+      PG_LANG: 
+    ports:
+      - "5432:5432"
